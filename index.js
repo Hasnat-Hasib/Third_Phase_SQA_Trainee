@@ -84,12 +84,12 @@ async function Login() {
 
     // Login email
     driver.wait(until.elementLocated(By.id('email')), 50 * 1000).then(el => {
-        el.sendKeys("hasib8nh@gmail.com");
+        el.sendKeys("hasib@gmail.com");
     })
 
     // Login passwprd
     driver.wait(until.elementLocated(By.id('email')), 50 * 1000).then(el => {
-        el.sendKeys("123456");
+        el.sendKeys("654321");
     })
 
     // Register Button
