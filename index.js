@@ -31,7 +31,7 @@ async function Login() {
     driver.wait(until.elementLocated(By.id('customer_lastname')), 15 * 1000).then(el => {
         el.sendKeys("Hasib");
     })
-    // // Entering Firstname
+    // // Entering Password
     driver.wait(until.elementLocated(By.className('is_required validate form-control')), 100 * 1000).then(el => {
         el.sendKeys("123456");
     })
@@ -40,18 +40,22 @@ async function Login() {
     driver.wait(until.elementLocated(By.id('firstname')), 50 * 1000).then(el => {
         el.sendKeys("Hasnat");
     })
+
     //Address Lastname
     driver.wait(until.elementLocated(By.id('lastname')), 50 * 1000).then(el => {
         el.sendKeys("Hasib");
     })
+
     //Address Lastname
     driver.wait(until.elementLocated(By.id('address1')), 50 * 1000).then(el => {
         el.sendKeys("E-60,NS town");
     })
+
     //Address City
     driver.wait(until.elementLocated(By.id('city')), 50 * 1000).then(el => {
         el.sendKeys("Jashore");
     })
+
     //Postcode
     driver.wait(until.elementLocated(By.id('postcode')), 50 * 1000).then(el => {
         el.sendKeys("00000");
@@ -82,17 +86,18 @@ async function Login() {
     driver.wait(until.elementLocated(By.id('email')), 50 * 1000).then(el => {
         el.sendKeys("hasib8nh@gmail.com");
     })
+
     // Login passwprd
     driver.wait(until.elementLocated(By.id('email')), 50 * 1000).then(el => {
         el.sendKeys("123456");
     })
 
-    
-       // Register Button
-       driver.wait(until.elementLocated(By.id('SubmitLogin')), 50 * 1000).then(el => {
-        el.click();
+    // Register Button
+    driver.wait(until.elementLocated(By.id('SubmitLogin')), 50 * 1000).then(el => {
+    el.click();
     })
-     //Logout
+
+    //SignOut
        driver.wait(until.elementLocated(By.className('logout')), 50 * 1000).then(el => {
         el.click();
     })
